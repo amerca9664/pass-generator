@@ -19,8 +19,8 @@ const passwordOptions = {
   };
 
 inpRange.addEventListener('input', event => {
-    valueNow = event.target.value
-    lblShowPass.textContent = `LENGTH: ${valueNow}`
+    const valueNow = event.target.value;
+    lblShowPass.textContent = `LENGTH: ${valueNow}`;
 
 
 
