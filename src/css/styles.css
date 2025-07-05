@@ -85,9 +85,7 @@ body{
     transition: transform 0.2s;
 }
 
- .boton:enabled{
-    background:  linear-gradient(to right, var(--linear-gradient1), var(--linear-gradient2));
- }
+
 
 .limits, .limits2{
 
@@ -106,19 +104,7 @@ body{
     margin-left: 20px;
 }
 
-@media (hover: hover) {
-    .boton:enabled:hover {
-        cursor: pointer;
-        transform: scale(0.95);
-    }
-  }
 
-  @media (hover: hover) {
-    .selectChk__checkboxVisual:hover {
-        cursor: pointer;
-
-    }
-  }
 
 .selectChk{
     display: flex;
@@ -158,12 +144,7 @@ body{
     font-size: 1.25rem;
 }
 
-.selectChk__checkbox:checked + .selectChk__checkboxVisual::after{
-    transform: translateX(25px);
-}
-.selectChk__checkbox:checked + .selectChk__checkboxVisual{
-    background-color: var(--toggleButtonOn);
-}
+
 
 @media screen and (max-width: 538px) {
     .chkShowPass {
@@ -173,4 +154,29 @@ body{
     .boton, .limits, .limits2, .labelGen, .selectChk__span{
         font-size: 1rem;;
     }
+}
+
+.boton:enabled{
+  background:  linear-gradient(to right, var(--linear-gradient1), var(--linear-gradient2));
+}
+
+@media (hover: hover) {
+  .selectChk__checkboxVisual:hover {
+    cursor: pointer;
+
+  }
+  .boton:enabled:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+  }
+  }
+
+
+
+.selectChk__checkbox:checked + .selectChk__checkboxVisual{
+    background-color: var(--toggleButtonOn);
+}
+
+.selectChk__checkbox:checked + .selectChk__checkboxVisual::after{
+    transform: translateX(25px);
 }
