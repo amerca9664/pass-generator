@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <script type="module" src="./js/index.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <input type="text"  class="showText  chkShowPass" id="inpShowPass" placeholder="P4$5W0RD!" readonly>
+        <label id="lblShowSize" class="labelGen">LENGTH: 16</label>
+        <div class="range">
+            <label class="limits" for="inpRange">4</label>    
+            <input type="range" step="1" min="4" max="32" value="16" class="range__iteamRange" id="inpRange">
+            <label class="limits2" for="inpRange">32</label>
+        </div>
+
+        <div id="chkCont">
+          <div class="selectChk">
+              <span class="selectChk__span">Include Uppercase</span>
+              <input type="checkbox" name="" data-string="uppercase" id="uppercase" class="selectChk__checkbox" hidden>
+              <label class="selectChk__checkboxVisual" for="uppercase"></label>
+          </div>
+          <div class="selectChk">
+              <span class="selectChk__span">Include Lowercase</span>
+              <input type="checkbox" name="" data-string="lowercase" id="lowercase" class="selectChk__checkbox" hidden>
+              <label class="selectChk__checkboxVisual" for="lowercase"></label>
+          </div>
+          <div class="selectChk">
+              <span class="selectChk__span">Include Numbers</span>
+              <input type="checkbox" name="" data-string="numbers" id="numbers" class="selectChk__checkbox" hidden>
+              <label class="selectChk__checkboxVisual" for="numbers"></label>
+  
+          </div>
+          <div class="selectChk">
+              <span class="selectChk__span">Include Symbols</span>
+              <input type="checkbox" name="" data-string="symbols" id="symbols" class="selectChk__checkbox" hidden>
+              <label class="selectChk__checkboxVisual" for="symbols"></label>
+          </div>
+
+        </div>
+
+        <input id="bot" type="button" class="boton" value="Generate Password" disabled>
+    </div>
+    
+    
+     <script src="./js/index.js"></script>  
+</body>
 </html>
