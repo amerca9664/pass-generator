@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 // GITHUB
-const finalFolder = '../docs';
+const finalFolder = './docs';
 
 // STANDARD
 // const finalFolder = '../dist';
